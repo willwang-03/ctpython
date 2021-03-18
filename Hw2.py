@@ -11,7 +11,7 @@ end = int(input('終止值:'))
 print('4的倍數有:',end=" ")
 for i in range(start,end+1):
     if i % 4 == 0:
-        print(i,sep=',',end=' ')
+        print(i,end=' ')
         
 print()        
 print('質數有:',end=" ")
