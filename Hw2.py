@@ -16,7 +16,7 @@ for i in range(start,end+1):
 print()        
 print('質數有:',end=" ")
 
-for j in range(1,end+1):
+for j in range(start,end+1):
     count = 0
     for k in range(2,j):
         if j % k == 0:
