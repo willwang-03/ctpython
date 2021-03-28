@@ -1,27 +1,32 @@
 # -*- coding: utf-8 -*-
 """
-Created on Mon Mar 15 16:37:42 2021
+Created on Mon Mar 22 16:52:25 2021
 
-20210314 Hw1
-*****
-****
-***
-**
-*
-**
-***
-****
-*****
+20210321 Hw1
+1. 由系統亂數產生 1-49 之間六個，不重複的整數，請排序"遞增"印出
+   random
+   count
 
 @author: user
 """
+import random
 
-for a in range (5,1,-1):
-    for b in range(0,a):
-        print("*",end='')
-    print()
+result = []
+count = 0
 
-for c in range (1,6):
-    for d in range(0,c):
-        print("*",end='')            
-    print()
+while True:
+    
+    num = int (random.randint(1, 49))
+    
+    if count == 6:
+        break
+    
+    if result.count(num) == 0:
+        result.append(num)
+        count += 1
+    
+result.sort()
+print(result)
+
+print('程式執行完畢')    
+        
